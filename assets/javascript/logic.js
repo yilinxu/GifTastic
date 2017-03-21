@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	$("#display-button").on("click","button",function(){
 		var select_movie = $(this).text().trim();
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + select_movie + "&api_key=dc6zaTOxFJmzC&limit=10"
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + select_movie + "&api_key=dc6zaTOxFJmzC&limit=10"
 		$.ajax({
 			url : queryURL,
 			method : 'GET'
